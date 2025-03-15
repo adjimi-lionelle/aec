@@ -34,5 +34,9 @@ Route::get('/f', function () {
     return view('layouts/connecter');
 });
 
+Route::get('/form', function () {
+    return view('layouts/formulaire');
+});
+
 
 

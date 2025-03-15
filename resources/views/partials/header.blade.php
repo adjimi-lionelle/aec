@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Blogy Bootstrap Template</title>
+  <title>Index - AEC</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 </head>
@@ -41,11 +41,11 @@
       <div class="container d-flex justify-content-center position-relative">
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" class="active">Accueil</a></li>
-            <li><a href="about.html">A Propos</a></li>
-            <li><a href="category.html">Nos Services</a></li>
-            <li><a href="blog-details.html">Details Services</a></li>
-            <li><a href="author-profile.html">Je suis Entrepreneur</a></li>
+            <li><a href="/t" class="active">Accueil</a></li>
+            <li><a href="/a">A Propos</a></li>
+            <li><a href="/c">Nos Services</a></li>
+            <li><a href="/d">Details Services</a></li>
+            <li><a href="/r">Je suis Entrepreneur</a></li>
             <!-- <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="about.html">A Propos</a></li>
@@ -66,7 +66,7 @@
                 </li>
               </ul>
             </li> -->
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/o">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

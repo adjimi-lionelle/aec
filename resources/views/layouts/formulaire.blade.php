@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Se Connecter</title>
+    <title>Creer Un Compte</title>
     <style>
         * {
             margin: 0;
@@ -17,7 +17,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 140vh;
             color: #333;
         }
 
@@ -63,6 +63,7 @@
             border-color: #2575fc;
             outline: none;
         }
+
         .sub{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -79,7 +80,8 @@
             font-size: 1rem;
             cursor: pointer;
             transition: background 0.3s ease;
-            justify-self: start;        }
+            justify-self: start;
+        }
 
         .login-button:hover {
             background: #1b5bbf;
@@ -95,7 +97,8 @@
             font-size: 1rem;
             cursor: pointer;
             transition: background 0.3s ease;
-            justify-self: end;        }
+            justify-self: end;
+        }
 
         .login-butt:hover {
             background:rgb(191, 27, 54);
@@ -137,23 +140,43 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Se Connecter</h2>
+        <h2>Créer Votre Compte</h2>
         <form>
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="nom" id="nom" placeholder="Entrez votre nom">
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prenom</label>
+                <input type="prenom" id="prenom" placeholder="Entrez votre prenom">
+            </div>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Entrez votre email" required>
             </div>
             <div class="form-group">
+                <label for="coordonnee">Coordonnée</label>
+                <input type="coordonnee" id="coordonne" placeholder="Entrez vos coordonné">
+            </div>
+            <div class="form-group">
+                <label for="numtel">Numéro de Téléphone</label>
+                <input type="numtel" id="numtel" placeholder="Entrez votre contact">
+            </div>
+            <div class="form-group">
                 <label for="password">Mot de passe</label>
                 <input type="password" id="password" placeholder="Entrez votre mot de passe" required>
             </div>
-            <div class="sub">
-               <button type="submit" class="login-button">Se connecter</button>
-               <button type="submit" class="login-butt">Annuler</button>
+            <div class="form-group">
+                <label for="ville">Ville de Résidence</label>
+                <input type="ville" id="ville" placeholder="Entrez votre ville de résidence">
             </div>
-            <p>Vous n'avez pas de compte?</p>
-            <div>
-                <a href="/form">Creer Compte</a>
+            <div class="form-group">
+                <label for="specialite">Spécialité</label>
+                <input type="specialite" id="specialite" placeholder="Entrez votre spécialité" required>
+            </div>
+            <div class="sub">
+                <button type="submit" class="login-button">Valider</button>
+                <button type="submit" class="login-butt">Annuler</button>
             </div>
         </form>
     </div>

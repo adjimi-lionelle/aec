@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Author Profile - Blogy Bootstrap Template</title>
+  <title>Je suis entrepreneur -AEC</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -45,7 +45,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Blogy Bootstrap Template</title>
+  <title>Entrepreneur</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 </head>
@@ -59,7 +59,7 @@
         <a href="index.html" class="logo d-flex align-items-end">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.webp" alt=""> -->
-          <h1 class="sitename">Blogy</h1><span>.</span>
+          <h1 class="sitename">AEC</h1><span>.</span>
         </a>
 
         <div class="d-flex align-items-center">
@@ -82,8 +82,8 @@
       <div class="container d-flex justify-content-center position-relative">
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" class="active">Accueil</a></li>
-            <li><a href="#">Me Connecter</a></li>
+            <li><a href="/t" class="active">Accueil</a></li>
+            <li><a href="/f">Me Connecter</a></li>
             <li><a href="#">Gerer Mes Services</a></li>
             <li><a href="contact.html">Gerer Mon Compte</a></li>
           </ul>
@@ -98,7 +98,7 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title">
+    <!-- <div class="page-title">
       <div class="breadcrumbs">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -107,7 +107,7 @@
             <li class="breadcrumb-item active current">Author Profile</li>
           </ol>
         </nav>
-      </div>
+      </div> -->
 
       <div class="title-wrapper">
         <h1>Je suis entrepreneur</h1>
