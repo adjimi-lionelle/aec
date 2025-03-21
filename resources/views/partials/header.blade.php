@@ -15,7 +15,7 @@
     <div class="container-fluid container-xl position-relative">
 
       <div class="top-row d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-end">
+        <a href="/" class="logo d-flex align-items-end">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.webp" alt=""> -->
           <h1 class="sitename">AEC</h1><span>.</span>
@@ -41,7 +41,7 @@
       <div class="container d-flex justify-content-center position-relative">
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="/" class="active">Accueil</a></li>
+            <!-- <li><a href="/" class="active">Accueil</a></li> -->
             <li><a href="/apropos">A Propos</a></li>
             <li><a href="/catégorie">Nos Services</a></li>
             <li><a href="/detail">Details Services</a></li>

@@ -152,7 +152,7 @@
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Entrez votre email" required>
+                <input type="email" id="email" placeholder="Entrez votre email">
             </div>
             <div class="form-group">
                 <label for="coordonnee">Coordonnée</label>
@@ -164,7 +164,7 @@
             </div>
             <div class="form-group">
                 <label for="password">Mot de passe</label>
-                <input type="password" id="password" placeholder="Entrez votre mot de passe" required>
+                <input type="password" id="password" placeholder="Entrez votre mot de passe">
             </div>
             <div class="form-group">
                 <label for="ville">Ville de Résidence</label>
@@ -172,7 +172,7 @@
             </div>
             <div class="form-group">
                 <label for="specialite">Spécialité</label>
-                <input type="specialite" id="specialite" placeholder="Entrez votre spécialité" required>
+                <input type="specialite" id="specialite" placeholder="Entrez votre spécialité">
             </div>
             <div class="sub">
                 <button type="submit" class="login-button">Valider</button>
