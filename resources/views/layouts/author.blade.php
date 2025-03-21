@@ -82,8 +82,8 @@
       <div class="container d-flex justify-content-center position-relative">
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="/t" class="active">Accueil</a></li>
-            <li><a href="/f">Me Connecter</a></li>
+            <li><a href="/" class="active">Accueil</a></li>
+            <li><a href="/connecter">Me Connecter</a></li>
             <li><a href="/service">Gerer Mes Services</a></li>
             <li><a href="contact.html">Gerer Mon Compte</a></li>
           </ul>
