@@ -62,7 +62,7 @@
           <h1 class="sitename">AEC</h1><span>.</span>
         </a>
 
-        <div class="d-flex align-items-center">
+        <!-- <div class="d-flex align-items-center">
           <div class="social-links">
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -73,7 +73,7 @@
             <input type="text" placeholder="Search..." class="form-control">
             <button type="submit" class="btn"><i class="bi bi-search"></i></button>
           </form>
-        </div>
+        </div> -->
       </div>
 
     </div>
@@ -84,7 +84,7 @@
           <ul>
             <li><a href="/t" class="active">Accueil</a></li>
             <li><a href="/f">Me Connecter</a></li>
-            <li><a href="#">Gerer Mes Services</a></li>
+            <li><a href="/service">Gerer Mes Services</a></li>
             <li><a href="contact.html">Gerer Mon Compte</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

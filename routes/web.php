@@ -2,35 +2,35 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/t', function () {
+Route::get('/', function () {
     return view('layouts/index');
 });
 
-Route::get('/r', function () {
+Route::get('/entrepreneur', function () {
     return view('layouts/author');
 });
 
-Route::get('/a', function () {
+Route::get('/apropos', function () {
     return view('layouts/about');
 });
 
-Route::get('/c', function () {
+Route::get('/catégorie', function () {
     return view('layouts/categorie');
 });
 
-Route::get('/o', function () {
+Route::get('/contact', function () {
     return view('layouts/contact');
 });
 
-Route::get('/d', function () {
+Route::get('/detail', function () {
     return view('layouts/detail-blog');
 });
 
-Route::get('/f', function () {
+Route::get('/connecter', function () {
     return view('layouts/connecter');
 });
 
@@ -38,5 +38,8 @@ Route::get('/form', function () {
     return view('layouts/formulaire');
 });
 
+Route::get('/service', function () {
+    return view('layouts/services');
+});
 
 
