@@ -15,7 +15,7 @@
     <div class="container-fluid container-xl position-relative">
 
       <div class="top-row d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-end">
+        <a href="/" class="logo d-flex align-items-end">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.webp" alt=""> -->
           <h1 class="sitename">AEC</h1><span>.</span>
@@ -41,11 +41,11 @@
       <div class="container d-flex justify-content-center position-relative">
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="/t" class="active">Accueil</a></li>
-            <li><a href="/a">A Propos</a></li>
-            <li><a href="/c">Nos Services</a></li>
-            <li><a href="/d">Details Services</a></li>
-            <li><a href="/r">Je suis Entrepreneur</a></li>
+            <!-- <li><a href="/" class="active">Accueil</a></li> -->
+            <li><a href="/apropos">A Propos</a></li>
+            <li><a href="/catégorie">Nos Services</a></li>
+            <li><a href="/detail">Details Services</a></li>
+            <li><a href="/entrepreneur">Je suis Entrepreneur</a></li>
             <!-- <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="about.html">A Propos</a></li>
@@ -66,7 +66,7 @@
                 </li>
               </ul>
             </li> -->
-            <li><a href="/o">Contact</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

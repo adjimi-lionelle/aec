@@ -56,13 +56,13 @@
     <div class="container-fluid container-xl position-relative">
 
       <div class="top-row d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-end">
+        <a href="/" class="logo d-flex align-items-end">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.webp" alt=""> -->
           <h1 class="sitename">AEC</h1><span>.</span>
         </a>
 
-        <div class="d-flex align-items-center">
+        <!-- <div class="d-flex align-items-center">
           <div class="social-links">
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -73,7 +73,7 @@
             <input type="text" placeholder="Search..." class="form-control">
             <button type="submit" class="btn"><i class="bi bi-search"></i></button>
           </form>
-        </div>
+        </div> -->
       </div>
 
     </div>
@@ -82,9 +82,8 @@
       <div class="container d-flex justify-content-center position-relative">
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="/t" class="active">Accueil</a></li>
-            <li><a href="/f">Me Connecter</a></li>
-            <li><a href="#">Gerer Mes Services</a></li>
+            <li><a href="/connecter">Me Connecter</a></li>
+            <li><a href="/service">Gerer Mes Services</a></li>
             <li><a href="contact.html">Gerer Mon Compte</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
