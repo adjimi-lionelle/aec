@@ -43,7 +43,7 @@
           <ul>
             <!-- <li><a href="/" class="active">Accueil</a></li> -->
             <li><a href="/apropos">A Propos</a></li>
-            <li><a href="/catégorie">Nos Services</a></li>
+            <li><a href="/services">Nos Services</a></li>
             <li><a href="/detail">Details Services</a></li>
             <li><a href="/entrepreneur">Je suis Entrepreneur</a></li>
             <!-- <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>

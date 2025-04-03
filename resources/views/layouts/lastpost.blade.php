@@ -1,60 +1,52 @@
-<!DOCTYPE>
-<html>
-    <head>
-        <title></title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <!-- Latest Posts Section -->
-        <section id="latest-posts" class="latest-posts section">
+<section id="latest-posts" class="latest-posts section">
 
 <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Latest Posts</h2>
-            <div><span>Check Our</span> <span class="description-title">Latest Posts</span></div>
-        </div><!-- End Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>Latest Posts</h2>
+  <div><span>Check Our</span> <span class="description-title">Latest Posts</span></div>
+</div><!-- End Section Title -->
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row gy-4">
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="row gy-4">
 
-            <div class="col-lg-4">
-                <article>
+    <div class="col-lg-4">
+      <article>
 
-                    <div class="post-img">
-                        <img src="assets/img/blog/blog-post-1.webp" alt="" class="img-fluid">
-                    </div>
+        <div class="post-img">
+          <img src="assets/img/blog/blog-post-1.webp" alt="" class="img-fluid">
+        </div>
 
-                    <p class="post-category">Politics</p>
+        <p class="post-category">Politics</p>
 
-                    <h2 class="title">
-                        <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                    </h2>
+        <h2 class="title">
+          <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+        </h2>
 
-                    <div class="d-flex align-items-center">
-                        <img src="assets/img/person/person-f-12.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
-                        <div class="post-meta">
-                            <p class="post-author">Maria Doe</p>
-                            <p class="post-date">
-                                <time datetime="2022-01-01">Jan 1, 2022</time>
-                            </p>
-                        </div>
-                    </div>
+        <div class="d-flex align-items-center">
+          <img src="assets/img/person/person-f-12.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+          <div class="post-meta">
+            <p class="post-author">Maria Doe</p>
+            <p class="post-date">
+              <time datetime="2022-01-01">Jan 1, 2022</time>
+            </p>
+          </div>
+        </div>
 
-                </article>
-            </div><!-- End post list item -->
+      </article>
+    </div><!-- End post list item -->
 
-            <div class="col-lg-4">
-                <article>
+    <div class="col-lg-4">
+      <article>
 
-                    <div class="post-img">
-                        <img src="assets/img/blog/blog-post-2.webp" alt="" class="img-fluid">
-                    </div>
+        <div class="post-img">
+          <img src="assets/img/blog/blog-post-2.webp" alt="" class="img-fluid">
+        </div>
 
-                    <p class="post-category">Sports</p>
+        <p class="post-category">Sports</p>
 
-                    <h2 class="title">
-                    <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-                    </h2>
+        <h2 class="title">
+          <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+        </h2>
 
         <div class="d-flex align-items-center">
           <img src="assets/img/person/person-f-13.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
@@ -177,5 +169,3 @@
 </div>
 
 </section><!-- /Latest Posts Section -->
-    </body>
-</html>

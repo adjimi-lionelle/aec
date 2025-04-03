@@ -18,8 +18,8 @@ Route::get('/apropos', function () {
     return view('layouts/about');
 });
 
-Route::get('/catégorie', function () {
-    return view('layouts/categorie');
+Route::get('/services', function () {
+    return view('layouts/Nos_services/services');
 });
 
 Route::get('/contact', function () {
@@ -27,7 +27,7 @@ Route::get('/contact', function () {
 });
 
 Route::get('/detail', function () {
-    return view('layouts/detail-blog');
+    return view('layouts/Nos_services/detail-services');
 });
 
 Route::get('/connecter', function () {
@@ -38,8 +38,8 @@ Route::get('/form', function () {
     return view('layouts/formulaire');
 });
 
-Route::get('/service', function () {
-    return view('layouts/services');
+Route::get('/catégorie', function () {
+    return view('layouts/categorie');
 });
 
 
