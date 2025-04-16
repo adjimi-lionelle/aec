@@ -180,17 +180,24 @@
 <body>
     <div class="login-container">
         <h2>Se Connecter</h2>
-        <form>
+        <form action="{{ route('view_site/layouts/connecter') }}" method="post">
+            @csrf
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Entrez votre email" required>
+                <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Entrez votre email">
+                @error('email')
+                    <span style="color: red;">{{ $message }}</span>
+                @enderror
             </div>
             <div class="form-group">
                 <label for="password">Mot de passe</label>
-                <input type="password" id="password" placeholder="Entrez votre mot de passe" required>
+                <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe">
+                @error('password')
+                    <span style="color: red;">{{ $message }}</span>
+                @enderror
             </div>
             <div class="remember-forgot">
-                <label><input type="checkbox"> Se souvenir de moi</label>
+                <label><input type="checkbox" name="remember"> Se souvenir de moi</label>
                 <a href="#">Mot de passe oublié ?</a>
             </div>
             <div class="sub">

@@ -38,7 +38,7 @@
 
 <body class="about-page">
 
-@include('partials/header')
+@include('view_site/partials/header')
 
   <main class="main">
 

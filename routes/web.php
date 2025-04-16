@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\AuthController;
+
+
 require __DIR__.'/admin.php';
 
 // Route::get('/', function () {
@@ -27,13 +31,17 @@ Route::get('/contact', function () {
     return view('view_site/layouts/contact');
 });
 
+Route::get('/compte', function () {
+    return view('view_site/layouts/compte');
+});
+
 Route::get('/detail', function () {
     return view('view_site/layouts/Nos_services/detail-services');
 });
 
-Route::get('/connecter', function () {
-    return view('view_site/layouts/connecter');
-});
+Route::get('/login', [AuthController::class, 'connecter'])->name('view_site/layouts/connecter');
+Route::post('/login', [AuthController::class, 'login']);
+
 
 Route::get('/form', function () {
     return view('view_site/layouts/formulaire');

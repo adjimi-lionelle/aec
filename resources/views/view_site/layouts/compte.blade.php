@@ -82,9 +82,9 @@
       <div class="container d-flex justify-content-center position-relative">
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="/login">Me Connecter</a></li>
+            <li><a href="#">Ajouter</a></li>
             <li><a href="/service">Gerer Mes Services</a></li>
-            <li><a href="/compte">Mon Compte</a></li>
+            <li><a href="#">Gerer Mon Profil</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -109,7 +109,7 @@
       </div> -->
 
       <div class="title-wrapper">
-        <h1>Je suis entrepreneur</h1>
+        <h1>Mon Compte</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
       </div>
     </div><!-- End Page Title -->
