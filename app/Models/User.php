@@ -18,9 +18,13 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
-        'name',
+        'nom',
+        'prenom',
+        'ville',
+        'specialite',
+        'contact',
         'email',
-        'password',
+        'mot de passe'
     ];
 
     /**
@@ -44,5 +48,13 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+    public function comments() 
+    {
+       return $this->hasMany(Commentaire::class);
+    }
+    public function posts() 
+    {
+       return $this->hasMany(Post::class);
     }
 }

@@ -2,44 +2,55 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\AuthController;
+
+
+require __DIR__.'/admin.php';
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
 Route::get('/', function () {
-    return view('layouts/index');
+    return view('view_site/layouts/index');
 });
 
 Route::get('/entrepreneur', function () {
-    return view('layouts/author');
+    return view('view_site/layouts/author');
 });
 
 Route::get('/apropos', function () {
-    return view('layouts/about');
+    return view('view_site/layouts/about');
 });
 
-Route::get('/catégorie', function () {
-    return view('layouts/categorie');
+Route::get('/services', function () {
+    return view('view_site/layouts/Nos_services/services');
 });
 
 Route::get('/contact', function () {
-    return view('layouts/contact');
+    return view('view_site/layouts/contact');
+});
+
+Route::get('/compte', function () {
+    return view('view_site/layouts/compte');
 });
 
 Route::get('/detail', function () {
-    return view('layouts/detail-blog');
+    return view('view_site/layouts/Nos_services/detail-services');
 });
 
-Route::get('/connecter', function () {
-    return view('layouts/connecter');
-});
+Route::get('/login', [AuthController::class, 'connecter'])->name('view_site/layouts/connecter');
+Route::post('/login', [AuthController::class, 'login']);
+
 
 Route::get('/form', function () {
-    return view('layouts/formulaire');
+    return view('view_site/layouts/formulaire');
 });
 
-Route::get('/service', function () {
-    return view('layouts/services');
+Route::get('/catégorie', function () {
+    return view('view_site/layouts/categorie');
 });
 
-
+Route::get('/catégorie', function () {
+    return view('view_site/layouts/categorie');
+});
