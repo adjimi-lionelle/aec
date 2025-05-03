@@ -17,13 +17,13 @@ return new class extends Migration
             $table->string('prenom');
             $table->string('ville');
             $table->string('specialite');
-            $table->string('contact');
-            $table->string('role_entrepreneur');
-            $table->string('role_admin');
+            $table->integer('contact');
+            // $table->string('role_entrepreneur');
+            // $table->string('role_admin');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('mot_de_passe');
-            $table->foreignId('service_id');
+            // $table->foreignId('service_id');
             $table->timestamps();
         });
 

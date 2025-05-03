@@ -29,6 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="admin_assets/assets/css/style.css" rel="stylesheet">
+  @yield('style')
 
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -49,9 +50,7 @@
   <!-- End Sidebar-->
 
   <main id="main" class="main">
-
-  @include('view_admin/layouts/dashboard')
-
+  @yield('content')
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -61,6 +60,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+   @yield('script')
   <script src="admin_assets/assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="admin_assets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="admin_assets/assets/vendor/chart.js/chart.umd.js"></script>

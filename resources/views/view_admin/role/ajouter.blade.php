@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Se Connecter</title>
+    <title>Formulaire</title>
     <style>
         * {
             margin: 0;
@@ -27,7 +27,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             width: 100%;
-            max-width: 400px;
+            max-width: 500px;
             text-align: center;
             animation: fadeIn 0.5s ease-in-out;
         }
@@ -39,18 +39,18 @@
         }
 
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.1rem;
             text-align: left;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.2rem;
             font-weight: bold;
             color: #555;
         }
 
-        .form-group input {
+        .form-group input, .form-group select {
             width: 100%;
             padding: 0.75rem;
             border: 1px solid #ddd;
@@ -59,47 +59,19 @@
             transition: border-color 0.3s ease;
         }
 
-        .form-group input:focus {
+        .form-group input:focus, .form-group select:focus {
             border-color: #2575fc;
             outline: none;
         }
         
-        .remember-forgot {
+        .button-group {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-        }
-        
-        .remember-forgot a {
-            color: #2575fc;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .remember-forgot a:hover {
-            text-decoration: underline;
-            color: #1b5bbf;
-        }
-        
-        .remember-forgot label {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: #555;
-            cursor: pointer;
+            gap: 1rem;
+            margin-top: 1.5rem;
         }
 
-        .sub {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-bottom: 1.5rem;
-        }
-
-        .login-button {
-            width: 100%;
+        .submit-button {
+            flex: 1;
             padding: 0.75rem;
             background: #2575fc;
             color: white;
@@ -110,12 +82,12 @@
             transition: background 0.3s ease;
         }
 
-        .login-button:hover {
+        .submit-button:hover {
             background: #1b5bbf;
         }
 
-        .login-butt {
-            width: 100%;
+        .reset-button {
+            flex: 1;
             padding: 0.75rem;
             background: rgb(252, 37, 66);
             color: white;
@@ -126,25 +98,8 @@
             transition: background 0.3s ease;
         }
 
-        .login-butt:hover {
+        .reset-button:hover {
             background: rgb(191, 27, 54);
-        }
-        
-        .register-link {
-            font-size: 0.9rem;
-            color: #555;
-        }
-        
-        .register-link a {
-            color: #2575fc;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        
-        .register-link a:hover {
-            text-decoration: underline;
-            color: #1b5bbf;
         }
 
         @keyframes fadeIn {
@@ -161,54 +116,80 @@
         @media (max-width: 480px) {
             .login-container {
                 padding: 1.5rem;
+                margin: 1rem;
             }
 
             .login-container h2 {
                 font-size: 1.5rem;
             }
 
-            .form-group input {
+            .form-group input, .form-group select {
                 padding: 0.5rem;
             }
 
-            .login-button, .login-butt {
+            .submit-button, .reset-button {
                 padding: 0.5rem;
+            }
+            
+            .button-group {
+                flex-direction: column;
+                gap: 0.5rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="login-container">
-        <h2>Se Connecter</h2>
+        <h2>Formulaire</h2>
         @include('message')
-        <form action="{{ route('view_site/layouts/connecter') }}" method="post">
+        <form action="#" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Entrez votre email">
-                <!-- @error('email')
-                    <span style="color: red;">{{ $message }}</span>
-                @enderror -->
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
             </div>
+            
             <div class="form-group">
-                <label for="mot_de_passe">Mot de passe</label>
-                <input type="mot_de_passe" id="mot_de_passe" name="mot_de_passe" placeholder="Entrez votre mot de passe">
-                <!-- @error('password')
-                    <span style="color: red;">{{ $message }}</span>
-                @enderror -->
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required>
             </div>
-            <div class="remember-forgot">
-                <label><input type="checkbox" name="remember"> Se souvenir de moi</label>
-                <a href="#">Mot de passe oublié ?</a>
+
+            <div class="form-group">
+                <label for="ville">Ville</label>
+                <input type="text" id="ville" name="ville" required>
             </div>
-            <div class="sub">
-               <button type="submit" class="login-button">Se connecter</button>
-               <button type="button" class="login-butt">Annuler</button>
+
+            <div class="form-group">
+                <label for="contact">Spécialité</label>
+                <input type="tel" id="specialite" name="specialite" required>
             </div>
-            <div class="register-link">
-                <p>Vous n'avez pas de compte ? <a href="/form">Créer un compte</a></p>
+
+            <div class="form-group">
+                <label for="contact">Contact</label>
+                <input type="tel" id="contact" name="contact" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="mot_de_passe">Mot de Passe</label>
+                <input type="mot_de_passe" id="mot_de_passe" name="mot_de_passe" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Photo</label>
+                <input type="file" accept=".png" required>
+            </div>
+            
+            <div class="button-group">
+                <button type="submit" class="submit-button">Soumettre</button>
+                <button type="reset" class="reset-button">Annuler</button>
             </div>
         </form>
     </div>
 </body>
 </html>
+    

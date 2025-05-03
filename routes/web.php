@@ -2,8 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\AuthController;
-
+use App\Http\Controllers\AuthorController;
 
 require __DIR__.'/admin.php';
 
@@ -39,10 +38,6 @@ Route::get('/detail', function () {
     return view('view_site/layouts/Nos_services/detail-services');
 });
 
-Route::get('/login', [AuthController::class, 'connecter'])->name('view_site/layouts/connecter');
-Route::post('/login', [AuthController::class, 'login']);
-
-
 Route::get('/form', function () {
     return view('view_site/layouts/formulaire');
 });
@@ -51,6 +46,3 @@ Route::get('/catégorie', function () {
     return view('view_site/layouts/categorie');
 });
 
-Route::get('/catégorie', function () {
-    return view('view_site/layouts/categorie');
-});

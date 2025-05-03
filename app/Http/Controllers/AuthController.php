@@ -10,31 +10,42 @@ use Illuminate\Support\Facades\Session;
 class AuthController extends Controller
 {
 
-
     public function connecter(){
-        // if(auth()->check()){
-        //     return redirect('/admin/dashboard');
-        // }
+        if(!empty(Auth::check())){
+            return redirect('/dashboard');
+        }
         return view('view_site/layouts/connecter');
     }
     public function login(LoginRequest $request)
     {
-        $credentials = $request->getCredentials();
-        $remember = $request->get('remember', false);
-
-        if (!$remember) {
-            $remember = false;
+        $remember = !empty($request->remember) ? true : false;
+        if (Auth::attempt(['email'=> $request->email, 'mot_de_passe' => $request->mot_de_passe, $remember])) {
+            return redirect('/compte');
         }
-        if (!Auth::validate($credentials, $remember)) :
-            Session::put('error', 'Vous avez fait une erreur veuillez la corriger.');
-            return redirect('/entrepreneur');
-        endif;
-        // $user = Auth::getProvider()->retrieveByCredentials($credentials);
+        else {
+            redirect('/login')->back()->with('Error', 'Vous avez fait une erreur veuillez la corriger.' );
+        }
+    //     $credentials = $request->getCredentials();
+    //     $remember = $request->get('remember', false);
 
-        // Auth::login($user, $remember);
-        // Session::forget('error');
+    //     if (!$remember) {
+    //         $remember = false;
+    //     }
+    //     if (!Auth::validate($credentials, $remember)) :
+    //         Session::put('error', 'Vous avez fait une erreur veuillez la corriger.');
+    //         return redirect('/entrepreneur');
+    //     endif;
+    //     $user = Auth::getProvider()->retrieveByCredentials($credentials);
 
-        return $this->authenticated();
+    //     Auth::login($user, $remember);
+    //     Session::forget('error');
+
+    //     return $this->authenticated();
+     }
+
+     public function deconnecter(){
+        Auth::logout();
+        return redirect('');
     }
 
 }
