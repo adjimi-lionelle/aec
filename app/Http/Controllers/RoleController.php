@@ -33,7 +33,7 @@ class RoleController extends Controller
         $save->specialite = $request->specialite;
         $save->contact = $request->contact;
         $save->email = $request->email;
-        $save->mot_de_passe = $request->mot_de_passe;
+        $save->password = Hash::make($request->password);
         // $save->role_entrepreneur = $request->role_entrepreneur;
         // $save->role_admin = $request->role_admin;
         // $save->service_id = $request->service_id;
@@ -119,8 +119,8 @@ class RoleController extends Controller
         // $save->role_admin = $request->role_admin;
         // $save->service_id = $request->service_id;
     
-        if (!empty($request->mot_de_passe)) {
-            $save->mot_de_passe = Hash::make($request->mot_de_passe);
+        if (!empty($request->password)) {
+            $save->password = Hash::make($request->password);
         }
     
         $save->save();

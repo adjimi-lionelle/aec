@@ -16,31 +16,37 @@ class AuthController extends Controller
         }
         return view('view_site/layouts/connecter');
     }
-    public function login(LoginRequest $request)
+    public function login(Request $request)
     {
-        $remember = !empty($request->remember) ? true : false;
-        if (Auth::attempt(['email'=> $request->email, 'mot_de_passe' => $request->mot_de_passe, $remember])) {
-            return redirect('/compte');
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
+ 
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+ 
+            return redirect()->intended('dashboard');
         }
-        else {
-            redirect('/login')->back()->with('Error', 'Vous avez fait une erreur veuillez la corriger.' );
-        }
-    //     $credentials = $request->getCredentials();
-    //     $remember = $request->get('remember', false);
+ 
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ])->onlyInput('email');
+        // $credentials = $request->validate([
+        //     'email'=> ['required','email'],
+        //     'password'=>['required','min:4']
+        // ]);
 
-    //     if (!$remember) {
-    //         $remember = false;
-    //     }
-    //     if (!Auth::validate($credentials, $remember)) :
-    //         Session::put('error', 'Vous avez fait une erreur veuillez la corriger.');
-    //         return redirect('/entrepreneur');
-    //     endif;
-    //     $user = Auth::getProvider()->retrieveByCredentials($credentials);
+        // $credentials = $request->getCredentials();
+        // $user = Auth::getProvider()->retrieveByCredentials($credentials);
+        // dd($user);
+    
+    
+    }
 
-    //     Auth::login($user, $remember);
-    //     Session::forget('error');
-
-    //     return $this->authenticated();
+     protected function authenticated(Request $request, $user)
+     {
+         return redirect()->intended($this->redirectPath());
      }
 
      public function deconnecter(){

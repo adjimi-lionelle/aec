@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
 class UserMiddleware
@@ -26,6 +27,15 @@ class UserMiddleware
             Auth::logout();
             return redirect('');
         }   
-        return $next($request);
+
+        if ($request->user() && Auth::check()) {
+            if ($request->user()->hasRole('Admin')) {
+                return redirect()->route('/dashboard');
+            } elseif ($request->user()->hasRole('Entrepreneur')) {
+                return redirect()->route('/entrepreneur');
+            }
+        }
+
+        return $response;
     }
 }

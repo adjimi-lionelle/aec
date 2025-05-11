@@ -18,11 +18,9 @@ return new class extends Migration
             $table->string('ville');
             $table->string('specialite');
             $table->integer('contact');
-            // $table->string('role_entrepreneur');
-            // $table->string('role_admin');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('mot_de_passe');
+            $table->string('password');
             // $table->foreignId('service_id');
             $table->timestamps();
         });

@@ -140,45 +140,43 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Modifier</h2>
+        <h2>Formulaire</h2>
         @include('message')
-        @if(isset($getRecord) && $getRecord)
-        <form action="edit/'.$getRecord->id" method="post" enctype="multipart/form-data">
+        <form action="#" method="post" enctype="multipart/form-data">
             @csrf
-            @method('PUT')
             <div class="form-group">
                 <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" value="{{ $getRecord->nom }}" required>
+                <input type="text" id="nom" name="nom" required>
             </div>
             
             <div class="form-group">
                 <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom" value="{{ $getRecord->prenom }}" required>
+                <input type="text" id="prenom" name="prenom" required>
             </div>
 
             <div class="form-group">
                 <label for="ville">Ville</label>
-                <input type="text" id="ville" name="ville" value="{{ $getRecord->ville }}"  required>
+                <input type="text" id="ville" name="ville" required>
             </div>
 
             <div class="form-group">
                 <label for="contact">Spécialité</label>
-                <input type="tel" id="specialite" name="specialite" value="{{ $getRecord->specialite }}"  required>
+                <input type="tel" id="specialite" name="specialite" required>
             </div>
 
             <div class="form-group">
                 <label for="contact">Contact</label>
-                <input type="tel" id="contact" name="contact" value="{{ $getRecord->contact }}"  required>
+                <input type="tel" id="contact" name="contact" required>
             </div>
             
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" value="{{ $getRecord->email}}"  required>
+                <input type="email" id="email" name="email" required>
             </div>
             
             <div class="form-group">
                 <label for="mot_de_passe">Mot de Passe</label>
-                <input type="mot_de_passe" id="mot_de_passe" name="mot_de_passe" value="{{ $getRecord->mot_de_passe}}"  required>
+                <input type="mot_de_passe" id="mot_de_passe" name="password" required>
             </div>
             
             <div class="form-group">
@@ -191,7 +189,6 @@
                 <button type="reset" class="reset-button">Annuler</button>
             </div>
         </form>
-        @endif
     </div>
 </body>
 </html>

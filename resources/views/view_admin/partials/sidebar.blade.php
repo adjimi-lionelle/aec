@@ -19,7 +19,7 @@
       </li><!-- End Register Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/role">
+        <a class="nav-link collapsed" href="/roles">
           <i class="bi bi-box-arrow-in-right"></i>
           <span>Role</span>
         </a>

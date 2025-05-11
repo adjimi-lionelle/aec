@@ -46,26 +46,6 @@
             <li><a href="/services">Nos Services</a></li>
             <li><a href="/detail">Details Services</a></li>
             <li><a href="/entrepreneur">Je suis Entrepreneur</a></li>
-            <!-- <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="about.html">A Propos</a></li>
-                <li><a href="category.html">Categorie</a></li>
-                <li><a href="blog-details.html">Details Blog</a></li>
-                <li><a href="author-profile.html">Je suis entrepreneur</a></li>
-                <li><a href="search-results.html">Recherches</a></li>
-                <li><a href="404.html">404 Not Found Page</a></li>
-
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li> -->
             <li><a href="/contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

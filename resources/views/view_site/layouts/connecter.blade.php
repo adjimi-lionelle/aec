@@ -186,16 +186,16 @@
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Entrez votre email">
-                <!-- @error('email')
+                @error('email')
                     <span style="color: red;">{{ $message }}</span>
-                @enderror -->
+                @enderror
             </div>
             <div class="form-group">
                 <label for="mot_de_passe">Mot de passe</label>
-                <input type="mot_de_passe" id="mot_de_passe" name="mot_de_passe" placeholder="Entrez votre mot de passe">
-                <!-- @error('password')
+                <input type="mot_de_passe" id="mot_de_passe" name="password" placeholder="Entrez votre mot de passe">
+                @error('password')
                     <span style="color: red;">{{ $message }}</span>
-                @enderror -->
+                @enderror
             </div>
             <div class="remember-forgot">
                 <label><input type="checkbox" name="remember"> Se souvenir de moi</label>
