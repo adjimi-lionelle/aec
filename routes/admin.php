@@ -29,13 +29,6 @@ Route::group(['middleware' => 'user'], function () {
 });
 
 
-// Route::get('/service', [ServiceController::class, 'list']);
-// Route::get('/service/add', [ServiceController::class, 'add']);
-// Route::post('/service/add', [ServiceController::class, 'insert']);
-//     Route::get('/service/edit/{id}', [ServiceController::class, 'update']);
-//     Route::get('/service/delete/{id}', [ServiceController::class, 'delete']);
-
-
 Route::get('/login', [AuthController::class, 'connecter'])->name('view_site/layouts/connecter');
 Route::post('/login', [AuthController::class, 'login']);
 

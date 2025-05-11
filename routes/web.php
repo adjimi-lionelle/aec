@@ -22,9 +22,11 @@ Route::get('/apropos', function () {
     return view('view_site/layouts/about');
 });
 
-Route::get('/services', function () {
-    return view('view_site/layouts/Nos_services/services');
-});
+// Route::get('/services', [ServiceController::class, 'list'])->name('view_site/layouts/Nos_services/services');
+// Route::get('/services/add', [ServiceController::class, 'add']);
+// Route::post('/services/add', [ServiceController::class, 'insert']);
+// Route::get('/services/edit/{id}', [ServiceController::class, 'update']);
+// Route::get('/services/delete/{id}', [ServiceController::class, 'delete']);
 
 Route::get('/contact', function () {
     return view('view_site/layouts/contact');
